@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bili-transcript"
+version = "0.1.0"
+description = "提取任意 B 站视频的字幕或讲稿：优先抓取字幕，无字幕时自动下载音频做中文语音识别(ASR)。"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["bilibili", "字幕", "语音识别", "ASR", "FunASR", "讲稿", "subtitle"]
+dependencies = [
+    "requests>=2.28",
+    "funasr>=1.0",
+    "modelscope>=1.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+bili-transcript = "bili_transcript.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bili_transcript*"]

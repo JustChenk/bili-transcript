@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 本工具产生的临时/输出文件
+*.wav
+*.m4s
+*.mp3
+*.m4a
+audio.m4s
+audio.wav
+
+# 编辑器/系统
+.vscode/
+.idea/
+.DS_Store
