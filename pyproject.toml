@@ -22,5 +22,7 @@ dev = ["pytest>=7.0"]
 [project.scripts]
 bili-transcript = "bili_transcript.cli:main"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+# 源码平铺在 src/ 下，但通过 package-dir 映射成干净的包名 bili_transcript
+[tool.setuptools]
+packages = ["bili_transcript"]
+package-dir = {"bili_transcript" = "src"}

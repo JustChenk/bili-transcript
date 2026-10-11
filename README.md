@@ -185,9 +185,8 @@ bili-transcript/
 ├── pyproject.toml
 ├── LICENSE
 ├── .gitignore
-├── src/                      # 源码根目录（src 布局）
-│   └── bili_transcript/     # 核心包（Python 包）
-│       ├── __init__.py
+├── src/                      # 核心源码平铺于此（包名仍为 bili_transcript）
+│   ├── __init__.py           # 包入口
 │   ├── config.py             # 常量与模型配置
 │   ├── api.py                # B站 API：解析/信息/字幕列表/音轨
 │   ├── subtitles.py          # 字幕抓取与解析
