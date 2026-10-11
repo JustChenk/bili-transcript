@@ -23,4 +23,4 @@ dev = ["pytest>=7.0"]
 bili-transcript = "bili_transcript.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["bili_transcript*"]
+where = ["src"]
